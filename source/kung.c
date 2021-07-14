@@ -12,15 +12,17 @@ bruce_lee_t *create_bruce(attack_type_t type, float kick, int punch, float healt
         goto ret;
     }
 
+    bruce->type = type;
+
     switch (type)
     {
         case LOW:
-            bruce->low.kick = kick;
-            bruce->low.punch = punch;
+            bruce->low.value.kick = kick;
+            bruce->low.value.punch = punch;
             break;
         case HIGH:
-            bruce->high.kick = kick;
-            bruce->high.punch = punch;
+            bruce->high.value.kick = kick;
+            bruce->high.value.punch = punch;
             break;
         default:
             goto clean_up;
@@ -37,4 +39,15 @@ clean_up:
     }
 ret:
     return bruce;
+}
+
+
+void destroy_bruce(bruce_lee_t** bruce)
+{
+
+}
+
+void attack(attack_type_t type, float kick, int punch)
+{
+
 }
