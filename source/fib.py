@@ -35,3 +35,4 @@ else:
             print(f"{i+1}) {fast_fib(i, memo)}")
         else:
             print()
+            
