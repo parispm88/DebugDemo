@@ -2,8 +2,6 @@ whichFib = int(input("1) Slow\n2) Fast\nWhich Fibonacci Function? "))
 
 numTerms = int(input("How many terms of Fibonacci sequence to print? "))
 
-# Term Count - 1 2 3 4 5 6 7 8  9  10 11 12 13  14  15  16  17  18   19   20   21   22    23    24    25    26    27     28     29     30     31     32      33      34      35      36      37       38       39       40
-# Terms      - 0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765 10946 17711 28657 46368 75025 121393 196418 317811 514229 832040 1346269 2178309 3524578 5702887 9227465 14930352 24157817 39088169 63245986
 
 #recursive approach
 def fib(n):
@@ -20,11 +18,11 @@ def fast_fib(n, memo):
     return memo[n]
 
 if whichFib <= 0:
-    print("Please choose either 1) Slow or 2) Fast next time.")
+                                                        print("Please choose either 1) Slow or 2) Fast next time.")
 elif whichFib >= 3:
-    print("Please choose either 1) Slow or 2) Fast next time.")
+                                                        print("Please choose either 1) Slow or 2) Fast next time.")
 elif numTerms <= 0:
-    print("Please enter a positve value next time.")
+                                                        print("Please enter a positve value next time.")
 else:
     print("Fibonnaci sequence:")
     for i in range(numTerms):
